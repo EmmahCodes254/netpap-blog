@@ -1,0 +1,14 @@
+.article{
+    max-width: 720px;
+    margin: 0 auto;
+}
+.article-img{
+    text-align: center;
+}
+.title{
+    font-size: 52px;
+}
+p{
+    line-height: 1.5em;
+    font-size: 21px;
+}
