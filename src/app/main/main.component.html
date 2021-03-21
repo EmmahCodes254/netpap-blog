@@ -1,17 +1,23 @@
 <div *ngFor = "let article of articles">
     <div class="card">
-        <div class="card-body">
-            <div style="padding-right: 20px;">
-                <img [src] = 'article.imageUrl' style="width: 200px; height: 160px" />
-            </div>
-            <div>
-                <h3>
-                    {{article.title}}
-                </h3>
-                <div class="meta-info">{{article.date.toDateString()}}</div>
-                <p [innerHtml] = 'article.description'></p>
-                <a routerLink="/{{article.key}}" class="continue-reading"> Continue reading</a>
-            </div>
+        <div class="row">
+                <div class="col-md-4 c0l-sm-12 col-xs-12">
+                    <div style="padding-right: 20px;">
+                        <img [src] = 'article.imageUrl'class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div class="content">
+                        <h3 class="card-title mt-2">
+                            {{article.title}}
+                        </h3>
+                        <div class="meta-info">{{article.date.toDateString()}}</div>
+                        <p [innerHtml] = 'article.description'></p>
+                        <button class="ReadMore"><a routerLink="/{{article.key}}" class="continue-reading" >Read More</a></button>
+                    </div>
+                </div>
+            
         </div>
+        
     </div>
 </div>

@@ -1,7 +1,15 @@
+
+.navbar-brand{
+    color: teal;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 0.7rem;
+    display: flex;
+    justify-content: center;
+}
 .navbar{
     background: teal;
 }
-.navbar-brand{
-    color: #eee;
-    font-weight: bold;
+.nav-item{
+    color: white;
 }
